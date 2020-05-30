@@ -1,5 +1,14 @@
 # Mini-Operating-System-Simulator
 
+This program simulates some functions of an operating system. For example, CPU scheduling, memory management.
+
+**Some rules for this simulator followed:** 
+1. If a common process is currently using the CPU and a real process arrives, then the common process gets preemptied and sent to the head of the common processes ready-queue.
+1. Processes' PIDs starts with 1
+1. Hard disk number starts with 0
+1. Memory holes are implemented
+1. Contiguous memory management with "first-fit" approach
+
 ## To run this program
 
 ```bash
@@ -22,9 +31,5 @@ g++ -o simulator main.cpp
 - `S i` :  shows what processes are currently using the hard disks and what processes are waiting to use them. 
 - `S m` : shows the state of memory
 
-**Some rules for this simulator followed:** 
-1. If a common process is currently using the CPU and a real process arrives, then the common process gets preemptied and sent to the head of the common processes ready-queue.
-1. Processes' PIDs starts with 1
-1. Hard disk number starts with 0
-1. Memory holes are implemented
+
 
